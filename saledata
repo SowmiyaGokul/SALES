@@ -1,0 +1,13 @@
+SELECT * FROM sales.saledata;
+
+#show product name,sales amount
+select PRODUCTLINE,QUANTITYORDERED*PRICEEACH as salesamount
+FROM saledata;
+
+
+
+select CITY from saledata
+where CITY like '%a%' and CITY like '%e%' and CITY like '%i%'and CITY like '%o%' and CITY like'%u%' and not CITY like '% %';
+
+#to find avg salary 
+select avg(salary) from saledata;
