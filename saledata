@@ -11,3 +11,9 @@ where CITY like '%a%' and CITY like '%e%' and CITY like '%i%'and CITY like '%o%'
 
 #to find avg salary 
 select avg(salary) from saledata;
+
+
+#find all rows details with max salary
+select s.*, max(salary) over() as huge
+from saledata s limit 5;
+ 
